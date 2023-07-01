@@ -10,14 +10,14 @@
   padding-top: 1rem;
   padding-bottom: 2.1rem;  
 
-  background: #00161C;
+  background-color: #04bcb3;
   color: #FFF;
 
-  border-bottom: .1rem solid #103D4A;
+  border-bottom: .1rem solid #FFFFFF;
 }
 
 .header__logo {
-  margin-bottom: 2.3rem;
+  margin-bottom: 1.3rem;
 }
 
 .header__navigation{
@@ -35,12 +35,17 @@
 }
 
 .header__link{
-  margin: .75rem;
+  margin: 1rem .75rem;
 }
 
 .header__link a{
   display: block;
   
-  font-size: 1.4rem;  
+  font-size: 1.2rem;
+  font-weight: BOLD;
   line-height: 120%;
+}
+
+.header__link a:hover{
+  color: #000
 }

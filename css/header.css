@@ -1,4 +1,4 @@
-.cabecalho {
+.header {
     color: #FFF;
 
     width: 100%;
@@ -17,19 +17,17 @@
     position: absolute;
 }
 
-.cabecalho__logo {
+.header__logo {
     margin-bottom: 1rem;
 }
 
-.cabecalho__navegacao {
+.header__navigation {
     text-align: center;
 }
 
-.cabecalho__link {
+.header__link {
     font-size: 1.1rem;
-
     display: inline-block;
-
     margin-right: .7rem;
     margin-bottom: 1.25rem;
     margin-left: .7rem;

@@ -1,57 +1,41 @@
 .principal  {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    
-    background-color: #04bcb3;
-
-    padding: 3.5rem 2.5rem;
-    
-    color: #FFF;
-    text-align: center;
+  display: var(--dsp-f);
+  flex-flow: var(--f-ff-cnw);
+  align-items: var(--f-ai-c);
+  text-align: var(--txt-a-c);
+  color: var(--c-white);
+  
+  padding: var(--ctn-25);
+  
+  background-color: var(--c-green);
 }
 
 .principal__title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.4rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 120%;
-  color: #000;
+  font-family: var(--ft-f-1);
+  font-size: var(--title-1-fs);
+  font-weight: var(--ft-w-7);
+  line-height: var(--title-1-lh);
+  text-align: var(--txt-a-c);
+  text-transform: var(--txt-t-uc);
+  color: var(--c-black);
 
-  width: 70%;
+  width: var(--w-7);
 
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--mg-b-25);
 }
 
 .principal__text {
-  font-size: 1.4rem;
-  line-height: 200%;
+  font-family: var(--ft-f-1);
+  font-size: var(--text-3-fs);
+  line-height: var(--text-3-lh);
+  color: var(--c-white);
 
-  margin: 0 auto 2.5rem;
+  margin-bottom: var(--mg-b-25);
 }
+
 
 .principal__button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: var(--c-white);
 
-  background-color: #000;
-
-  width: 100%;
-  height: 5rem;
-
-  border-radius: .5rem;
-}
-
-
-.principal__button a{
-  font-size: 1.4rem;;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  color: #FFF;
-
-  flex-grow: 1;
+  background-color: var(--c-black);  
 }

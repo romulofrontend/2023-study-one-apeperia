@@ -30,7 +30,7 @@
   align-items: var(--f-ai-c);
 }
 
-.destaques__panelimage{
+.destaques__panel-image{
   width: var(--w-10);
 
   margin-bottom: var(--mg-b-10);

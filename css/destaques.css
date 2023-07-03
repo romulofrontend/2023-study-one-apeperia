@@ -20,7 +20,7 @@
 
 .destaques__link{
   display: var(--dsp-b);
-  
+
   margin-bottom: var(--mg-b-30);
 }
 
@@ -30,13 +30,13 @@
   align-items: var(--f-ai-c);
 }
 
-.destaques__image{
+.destaques__panelimage{
   width: var(--w-10);
 
   margin-bottom: var(--mg-b-10);
 }
 
-.destaques__text{
+.destaques__panel-text{
   font-family: var(--ft-f-2);
   font-size: var(--ft-s-12);
   font-weight: var(--ft-w-4);

@@ -31,7 +31,7 @@
 }
 
 .destaques__panel-image{
-  width: var(--w-10);
+  width: var(--w-100vw);
 
   margin-bottom: var(--mg-b-10);
 }

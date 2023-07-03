@@ -1,8 +1,184 @@
+:root {
+
+  /*WIDTH*/
+  --w-10 : 100%;
+  --w-7 : 70%;
+
+  /*BOX-SIZING*/
+  --bs-bb: border-box;
+
+  /*DISPLAY*/
+  --dsp-f: flex;
+  --dsp-b: block;
+  --dsp-ib: inline-block;
+  
+  /*FLEX-FLOW*/
+  --f-ff-rnw: row nowrap;
+  --f-ff-rw: row wrap;
+  --f-ff-cnw: column nowrap;
+  --f-ff-cw: column wrap;
+
+  /*ALIGN-ITEMS*/
+  --f-ai-c: center;
+  --f-ai-fs: flex-start;
+  --f-ai-fe: flex-end;
+
+  /*JUSTIFY-CONTENT*/
+  --f-jc-c: center;
+  --f-jc-fs: flex-start;
+  --f-jc-fe: flex-end;
+  --f-jc-sa: space-around;
+  --f-jc-sb: space-between;
+  --f-jc-se: space-evenly;
+
+
+  /*CONTAINER*/
+  --ctn-15: 1.5rem 2.5rem;
+  --ctn-25: 2.5rem 2.5rem;
+  --ctn-35: 3.5rem 2.5rem;
+
+
+  /*FONT-FAMILY*/
+  --ft-f-1: 'Montserrat', sans-serif;
+  --ft-f-2: 'Open Sans', sans-serif;
+
+  /*FONT-SIZE*/
+  --ft-s-12: 1.2rem;
+  --ft-s-14: 1.4rem;
+  --ft-s-15: 1.5rem;
+  --ft-s-20: 2rem;
+  
+  /*FONT-WEIGHT*/
+  --ft-w-3: 300;
+  --ft-w-4: 400;
+  --ft-w-7: 700;
+
+  
+  /*TEXT-TRANSFORM*/
+  --txt-t-uc: uppercase;
+  
+  /*TEXT-ALIGN*/
+  --txt-a-c: center;
+
+  /*LINE-HEIGHT*/
+  --txt-lh-120: 120%;
+  --txt-lh-200: 200%;
+
+  /*MARGIN-BOTTOM*/
+  --mg-b-10: 1rem;
+  --mg-b-15: 1.5rem;
+  --mg-b-25: 2.5rem;
+  --mg-b-30: 3rem;
+  --mg-b-35: 3.5rem;
+
+
+  /*COLORS*/
+  --c-green: #04bcb3;
+  --c-black: #000;
+  --c-white: #FFF;
+  --c-gray-1: #F7F4F4;
+  --c-gray-2: #DFE3E5;
+  --c-gray-3: #DFE3F5;
+  --c-gray-4: #666;
+  --c-gray-5: #4F4C4C;
+  --c-gray-6: #333;
+  --c-blue: #56CCF2;
+  --c-pink: #B04CD9;
+  --c-red:  #E33B3B;
+  
+
+  /*TITLES*/
+  --title-0-mb: 1.5rem; 
+
+  --title-1-fs: 2.4rem;
+  --title-1-lh: 2.4rem;
+  --title-1-mb: 1.5rem;
+  
+
+  /*TEXTS*/
+  --text-0-lh: 100%;
+
+  --text-1-fs: 2.4rem;
+
+  --text-2-fs: 1.6rem;
+
+  --text-3-fs: 1.4rem;
+  --text-3-lh: 2.1rem;
+  --text-3-mb: 2.5rem; 
+
+
+  /*BUTTONS*/
+  --btn-1-w: 100%;
+  --btn-1-h: 5.5rem;
+  --btn-1-fs: 1.2rem;
+  --btn-1-fw: 700;
+  --btn-1-tf: uppercase;
+  --btn-1-pd: 1.5rem;
+  --btn-1-bd-r: .5rem;
+  --btn-1-bd-1: .1rem solid var(--c-black);
+  --btn-1-bd-2: .1rem solid var(--c-white);
+
+  /*BORDERS*/
+  --bd-1: .1rem solid var(--c-white);
+  --bd-2: .1rem solid var(--c-gray-2);
+  
+  
+  /*CARD*/
+  --crd-bg-1: var(--c-gray-1);
+  --crd-bg-2: var(--c-white);
+  --crd-ff: var(--ff-2);
+
+  --crd-type-fs: 2.4rem;
+  --crd-type-lh: 2.4rem;
+  --crd-type-fw: var(--fw-3);  
+
+  --crd-value-fs: 4.8rem;
+  --crd-value-lh: 4.8rem;
+  --crd-value-fw: var(--fw-3);
+
+  --crd-text-fs: 1.5rem;
+  --crd-text-lh: 2.8rem;
+  --crd-text-fw: var(--fw-2);
+
+  --crd-bt-fs: 1.9rem;
+  --crd-bt-lh: 1.9rem;
+  --crd-bt-fw: var(--fw-3);
+
+  --crd-bt-bdr: var(--btn-1-border-r);
+  --crd-bt-bd: 1.5rem;
+
+
+  --crd-c-1: var(--c-blue);
+  --crd-c-2: var(--c-pink);
+  --crd-c-3: var(--c-red);
+
+  --crd-btn-border-1: .1rem solid var(--c-blue);
+  --crd-btn-border-2: .1rem solid var(--c-pink);
+  --crd-btn-border-3: .1rem solid var(--c-red);
+}
+
 html {
   font-size: 62.59%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--ff-2);
 }
 
+.button{
+  display: var(--dsp-b);
+  box-sizing: var(--bs-bb);
+
+  font-family: var(--ft-f-2);  
+  font-size: var(--btn-1-fs);
+  font-weight: var(--btn-1-fw);
+  text-align: var(--txt-a-c);
+  text-transform: var(--txt-t-uc);
+
+  min-width: 26.8rem;
+  padding: var(--btn-1-pd);
+
+  border-radius: var(--btn-1-bd-r);
+}
